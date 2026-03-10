@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Out</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-light d-flex justify-content-center align-items-center vh-100"
+  >
+    <div
+      class="card shadow-lg border-0 text-center p-5"
+      style="width: 450px; border-radius: 25px"
+    >
+      <div class="mb-3">
+        <i class="bi bi-clock-history text-danger" style="font-size: 60px"></i>
+      </div>
+      <h2 class="fw-bold mb-3" style="color: #1e293b">Time Out ⏰</h2>
+      <p class="text-secondary mb-4">
+        Sorry <span id="userName" class="fw-bold text-dark"></span>, <br />
+        your exam time has ended!
+      </p>
+
+      <div
+        class="result-box p-3 mb-4"
+        style="background: #f8fafc; border-radius: 15px"
+      >
+        <span class="text-muted d-block mb-1">Your Score</span>
+        <h3 id="resultText" class="text-primary fw-bold mb-0"></h3>
+      </div>
+
+      <button
+        onclick="goToLogin()"
+        class="btn btn-primary-custom w-100 py-3"
+        style="border-radius: 12px"
+      >
+        <i class="bi bi-box-arrow-left me-2"></i> Exit
+      </button>
+    </div>
+
+    <script src="js/timeout.js"></script>
+  </body>
+</html>
